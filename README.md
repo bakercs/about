@@ -9,7 +9,7 @@ and discuss programming languages and their surrounding tools.
   - What is git?
   - https://try.github.io
   - https://guides.github.com
-  - Git for ages 4 aqes and up (Tinker toys)
+  - Git for ages 4 aqes and up (Tinker toys) [link](https://www.youtube.com/watch?v=1ffBJ4sVUb4)
 - Guest Speakers
   - They could talk about their job and provide real-life examples.
   - Openhack??
