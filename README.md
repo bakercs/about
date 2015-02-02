@@ -13,10 +13,9 @@ and discuss programming languages and their surrounding tools.
     - (I'd summarize the first 20 or so minutes of the video)
 - Guest Speakers
   - Professionals could talk about their jobs and provide real-life examples.
-  - Tony ... Introduction to Openhack?
-  - Tom ... Ruby on Rails?
-  - ??? ... networking topics?
-  - ??? ... security topics?
+  - Anybody from Openhack?
+  - Tom, Mike, Tony
+  - Tony = PR Opportunity for Tech Garden
   - Students could talk about their areas of expertise
 - Brainstorming project ideas
 
