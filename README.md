@@ -1,6 +1,8 @@
 Computer Science Club
 ===
 
+[Take a look at the info sheet](https://github.com/1egoman/cs-club/blob/master/CSCLUB-INFO.md)
+
 The Baker Computer Science Club would meet after school once a week or biweekly
 and discuss programming languages and their surrounding tools.
 
