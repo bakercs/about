@@ -6,9 +6,9 @@ and discuss programming languages and their surrounding tools.
 
 ### Example Topics for Meetings:
 - Git and Github
-  - What is git?
+  - http://gitreal.codeschool.com/levels/1
+    - explains the basics of a 1-branch git repo
   - https://try.github.io
-  - https://guides.github.com
   - Git for ages 4 aqes and up (Tinker toys) [link](https://www.youtube.com/watch?v=1ffBJ4sVUb4)
     - (I'd summarize the first 20 or so minutes of the video)
 - Guest Speakers
