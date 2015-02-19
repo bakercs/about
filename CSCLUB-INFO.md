@@ -1,8 +1,8 @@
 Baker Computer Science Club
 ===
 
-The Baker computer science club is perfect for anybody with an interest in
-computer science.
+The Baker computer science club is perfect for anybody with a further interest in
+computer science, but has taken a programming language in school already.
 
 Git
 ---
