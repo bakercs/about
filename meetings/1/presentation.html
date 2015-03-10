@@ -9,17 +9,55 @@
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
       body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
+      h1, h2, h3, h4 {
         font-family: 'Yanone Kaffeesatz';
         font-weight: normal;
+        color: #f3f3f3;
       }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code, .remark-inline-code { 
+        font-family: 'Ubuntu Mono', monospace;
+        background: #D5D5D5;
+        color: #C25F5F;
+        padding: .5px 2px;
+      }
+      .remark-code {
+        padding: 2px;
+      }
+
+      .remark-slide-content {
+        background: #272822;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: table-cell;
+        font-size: 20px;
+        padding: 1em 4em 1em 4em;
+      }
+
+      p, li {
+        /*color: #777872;*/
+        color: #bebebe;
+      }
+
+      /* Inverse slide stuff */
+      .inverse {
+        background-color: #fff;
+        color: #000;
+      }
+      .inverse h1, .inverse h2, .inverse h3, .inverse h4 {
+        color: #000;
+        line-height: 0.8em;
+      }
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      .inverse p, .inverse li { color: #000; }
     </style>
   </head>
   <body>
     <textarea id="source">
 
-class: center, middle
+class: center, middle, inverse
 
 # Welcome to the Computer Science Club!
 
@@ -27,13 +65,30 @@ class: center, middle
 
 # Club Info
 
-- Tuesdays in the computer science room
-- I've got the first few meetings planned
-- After that, I'm open to member suggestions
-  - Let me know if you have any ideas
+### - Tuesdays in the computer science room
+### - I've got the first few meetings planned
+### - After that, I'm open to member suggestions - Let me know if you have any ideas
 
 ---
+## What should we do in this club?
 
+- Web design
+  - Making web pages (what the user sees)
+  - `HTML, CSS, Javascript`
+  - or, writing server software to send data to the user
+  - `Rails, Node, PHP`
+
+- "General" programming - `Python, C, etc...`
+
+- Mobile app development
+  - Making mobile apps
+  - We can't really do anything with ios (iPhones) because of the lack of Macs at the school
+  - `Android (Java)`
+  - `Cross-Platform apps (with Apache Cordova and Phonegap)`
+
+- Anything Else?
+---
+class: inverse
 # Github Info
 
 `http://github.com/bakercs`
@@ -42,9 +97,9 @@ class: center, middle
 2. Let me know your username and I'll add you to the computer science club group on Github
 
 ### 15 minutes of Git
-3. Take a look at [try.github.io](http://try.github.io)
+3. Take a look at `http://try.github.io`
   - Make sure to look at the blue box in the lower left
-    labeled `Advice` - it contains information that will help you
+    labeled **Advice** - it contains information that will help you
   - Don't worry about creating a Code School account (step 2 will ask you to)
 
 
