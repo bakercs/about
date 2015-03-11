@@ -35,3 +35,4 @@ h1 {
 - [bootstrap](http://getbootstrap.com)?
   - `col-md-*`?
   - responsive utility classes (such as ???)
+  - or, what is responsive design?
