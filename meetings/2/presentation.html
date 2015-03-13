@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CS Club</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Lobster);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3, h4 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+        color: #f3f3f3;
+      }
+      .remark-code, .remark-inline-code {
+        font-family: 'Ubuntu Mono', monospace;
+        background: #D5D5D5;
+        color: #C25F5F;
+        padding: .5px 2px;
+      }
+      .remark-code {
+        padding: 2px;
+      }
+
+      .remark-slide-content {
+        background: #272822;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: table-cell;
+        font-size: 20px;
+        padding: 1em 4em 1em 4em;
+      }
+
+      .remark-slide-content, p, li, a {
+        /*color: #777872;*/
+        color: #bebebe;
+      }
+
+      /* Inverse slide stuff */
+      .inverse {
+        background-color: #fff;
+        color: #000;
+      }
+      .inverse h1, .inverse h2, .inverse h3, .inverse h4 {
+        color: #000;
+        line-height: 0.8em;
+      }
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      .inverse p, .inverse li { color: #000; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle, inverse
+
+![](https://avatars3.githubusercontent.com/u/11279263?v=3&s=200)
+# CS Club: 3/16/15
+
+---
+
+# Put git on your computer, if you'd like
+- `http://windows.github.com`
+- `http://mac.github.com`
+- Or, install `git` through your package manager:
+  - OSX: `brew install git`
+  - Debian/Ubuntu: `apt-get install git`
+
+# Pull Requests
+- These allow you to suggest edits to a github repository
+- `github.com/bakercs` and click on `CONTRIBUTING.md`
+
+---
+
+# What are we talking about?
+
+The consensus last meeting was to talk about **web design**
+
+HTML &amp;&amp; CSS
+```html
+<html>
+  <head>
+    <title>page title</title>
+  </head>
+  <body>
+    <h1>Header</h1>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+    </div>
+  </body>
+</html>
+```
+
+# Header
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+
+---
+# Try and follow along, if you can.
+- JSFiddle
+
+`http://tiny.cc/csbs`
+
+![jsfiddle](jsfiddle.png)
+
+
+---
+# CSS
+- `Cascading Style Sheets`
+- Making your pages look "cool"
+- selectors and styles
+
+### CSS style examples
+- `<p style="color: red; background-color: blue;">text</p>` => <span style="color: red; background-color: blue;">text</span>
+- `style=""` - inline style attribute
+- `color: red;` `background: blue;` - css properties
+    - `color:` - property name
+    - `red;` - property value
+    - **semicolon important**
+
+---
+
+# A few CSS properties
+
+- `border: [size]px solid [color];` <span style="border: 1px solid #C25F5F;">Puts a border around something</span>
+- `text-align: [direction];` <span style="float: right;">center / right align text</span>
+- `font-family: "font name";` <span style="font-family: 'Lobster';">Changes fonts</span>
+- `font-size: [size]px` <span style="font-size: 40px">Changes the size of text</span>
+- `color: [color];` <span style="color: #C25F5F;">Changes text color</span>
+- `background-color: [color];` <span style="background: #C25F5F;">Changes background color</span>
+
+<!-- [Many more CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) -->
+
+---
+# External Stylesheets
+
+CSS can also be added into `<head>`
+```html
+<body>
+  <head>
+    <style>
+      // css here
+    </style>
+    <title>Page Title</title>
+  </head>
+  ...
+```
+---
+class: center, middle
+# CSS Selectors
+
+
+
+
+
+---
+# Element Selector
+```html
+<h1>header</h1>
+<p>text</p>
+```
+<br/>
+```css
+p {
+  color: red;
+}
+```
+<br/>
+# header
+<span style="color: red;">text</span>
+
+
+
+
+
+
+
+---
+# Class Selector
+```html
+<h1 class="milk">class-styled header</h1>
+<p>text</p>
+```
+<br/>
+```css
+.milk {
+  color: red;
+}
+```
+<br/>
+<h1 style="color: red;">class-styled header</h1>
+text
+
+
+
+
+
+---
+# ID Selector
+```html
+<h1 id="milk">id-styled header</h1>
+<p>text</p>
+```
+<br/>
+```css
+#milk {
+  color: red;
+}
+```
+<br/>
+<h1 style="color: red;">id-styled header</h1>
+text
+
+
+
+
+---
+# Bootstrap &amp; Responsive Design
+
+![](http://lonelybrand.com/blog/wp-content/uploads/2012/10/Screen-Shot-2012-10-16-at-3.26.34-PM.png)
+
+---
+# Default HTML Buttons:
+`<button>A Sample Button</button>`
+<br/>
+<button style="color: #000;">A Sample Button</button>
+---
+# Bootstrap Buttons:
+`<a href="http://google.com" class="btn btn-primary">Shiny Button</a>`
+<br/>
+<a href="http://google.com" class="btn btn-primary">Shiny Button</a>
+
+`<a href="http://google.com" class="btn btn-danger">Red Button</a>`
+<br/>
+<a href="http://google.com" class="btn btn-danger">Red Button</a>
+
+`<a href="http://google.com" class="btn btn-info btn-xs">Tiny Button</a>`
+<br/>
+<a href="http://google.com" class="btn btn-info btn-xs">Tiny Button</a>
+
+`<a href="http://google.com" class="btn btn-warning btn-xs">Tiny Button</a>`
+<br/>
+<a href="http://google.com" class="btn btn-warning btn-lg disabled">Disabled, Large Button</a>
+
+`<a href class="btn btn-default btn-block">Block Width Button</a>`
+<br/>
+<a href="#9" class="btn btn-default btn-block">Block Width Button</a>
+---
+# Bootstrap Navbars
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#10">Home</a></li>
+  <li role="presentation"><a href="#10">Profile</a></li>
+  <li role="presentation"><a href="#10">Messages</a></li>
+</ul>
+<br/>
+```html
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+```
+---
+# Textboxes, and other form controls
+```html
+  <input type="text" class="form-control" value="text" />
+  <input type="password" class="form-control" value="password" />
+  <select class="form-control">
+    <option value="a">option one</option>
+  </select>
+```
+  <div style="width: 300px; margin: 20px auto;">
+    <input type="text" class="form-control" value="text" />
+    <br/>
+    <input type="password" class="form-control" value="password" />
+    <br/>
+    <select class="form-control">
+      <option value="a">option one</option>
+    </select>
+  </div>
+---
+class: center, middle
+# Bootstrap makes your life easier by implementing code for you.
+
+---
+class: center, middle, inverse
+# Club website?
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
