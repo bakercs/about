@@ -3,10 +3,12 @@
   <head>
     <title>CS Club</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <style type="text/css">
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
       @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Lobster);
 
       body { font-family: 'Droid Serif'; }
       h1, h2, h3, h4 {
@@ -14,7 +16,7 @@
         font-weight: normal;
         color: #f3f3f3;
       }
-      .remark-code, .remark-inline-code { 
+      .remark-code, .remark-inline-code {
         font-family: 'Ubuntu Mono', monospace;
         background: #D5D5D5;
         color: #C25F5F;
@@ -33,7 +35,7 @@
         padding: 1em 4em 1em 4em;
       }
 
-      p, li {
+      .remark-slide-content, p, li {
         /*color: #777872;*/
         color: #bebebe;
       }
@@ -52,6 +54,26 @@
         left: 20px;
       }
       .inverse p, .inverse li { color: #000; }
+
+      /* Fake bootstrap resize */
+      div.fakestrap {
+        background: #555;
+        resize: horizontal;
+        overflow: hidden;
+        padding: 10px;
+        width: 270px;
+        height: 300px;
+      }
+      div.fakestrap::-webkit-resizer {
+        background: #f6f6f6;
+        display: block;
+        width: 150px !important;
+        height: 150px !important;
+      }
+      .fakestrap-small {
+        margin-left: -125px;
+        left: 50%;
+      }
     </style>
   </head>
   <body>
@@ -60,53 +82,87 @@
 class: center, middle, inverse
 
 ![](https://avatars3.githubusercontent.com/u/11279263?v=3&s=200)
-# Welcome to the Computer Science Club!
+# CS Club: 3/24/15
 
 ---
+# Slack
+- Our new communication platform: Slack
+- I sent everyone an invite - let me know if you didn't recieve one.
+- If you don't sign up, you're not going to get any communication from me or anyone else in the club.
 
-# Club Info
-
-### - Tuesdays in the computer science room
-### - I've got the first few meetings planned
-### - After that, I'm open to member suggestions - Let me know if you have any ideas
+### Please sign up and join the organisation on slack ASAP.
+<br/>
+<br/>
+.center[ ![](https://d2ba1wehz8pq9c.cloudfront.net/Others/app-200x200_36e473164d144056bc485d5665035fee.png) ]
 
 ---
-## What should we do in this club?
+# Club Officers
+### President: Me (Ryan Gaus)
 
-- Web design
-  - Making web pages (what the user sees)
-  - `HTML, CSS, Javascript`
-  - or, writing server software to send data to the user
-  - `Rails, Node, PHP`
+<br/>
+- We need to vote on a Vice President
+  - I'm thinking we shouldn't have one, but a few - thoughts?
+  - The position is for someone who is...
+      - somewhat knowlegable in programming
+      - comfortable with public speaking
+  - You'll probably be presenting stuff (with my assistance, if you'd like) in front of the club.
 
-- "General" programming - `Python, C, etc...`
+<br/>
+- *We're supposed to have a Treasurer, but there's no money involved so for now we'll omit? This is ok right?*
 
-- Mobile app development
-  - Making mobile apps
-  - We can't really do anything with ios (iPhones) because of the lack of Macs at the school
-  - `Android (Java)`
-  - `Cross-Platform apps (with Apache Cordova and Phonegap)`
-
-- Anything Else?
 ---
-class: inverse
-# Github Info
+# Our first project: Our Website
+- Take a look at it's current state - [`http://bakercs.github.io`](http://bakercs.github.io)
+- Github Repository: [`http://github.com/bakercs/bakercs.github.io`](http://github.com/bakercs/bakercs.github.io)
 
-`http://github.com/bakercs`
+- So... What do we want on it?
 
-1. Make a Github account - `github.com/join`
-2. Let me know your username and I'll add you to the computer science club group on Github
+---
+# Make a Fork
+- Go to [`http://github.com/bakercs/bakercs.github.io`](http://github.com/bakercs/bakercs.github.io) in your
+web browser
+- Click on the "Fork" button in the upper right
+- For more infomation, see [CONTRIBUTING.md](https://github.com/bakercs/about/blob/master/CONTRIBUTING.md) in `bakercs/about`
 
-### 15 minutes of Git
-3. Take a look at `http://try.github.io`
-  - Make sure to look at the blue box in the lower left
-    labeled **Advice** - it contains information that will help you
-  - Don't worry about creating a Code School account (step 2 will ask you to)
+---
+# Let's start coding!
+```bash
+git clone https://github.com/[YOUR USERNAME HERE]/bakercs.github.io
+cd "bakercs.github.io"
+```
+
+Run `pwd` to get your current directory, and go to it in a file browser.
+
+Make a copy of `index.html` and rename it to the page you're working on, so for
+example, `sample-page.html`
+
+Make whatever edits you'd like over the next week until the next meeting. Don't forget to update `partials/header.html` with a link to your new page!
+
+After every signifigant change, make sure to:
+
+```bash
+  git add -u
+  git commit -m "describe the changes you made, but no more than a sentence"
+  git push origin master
+```
+
+---
+# Think you're done?
+You need to make a pull request to merge your changes back into the main code.
+I've already explained this pretty well somewhere else so take a look at 
+[CONTRIBUTING.md](https://github.com/bakercs/about/blob/master/CONTRIBUTING.md) in 
+`bakercs/about`. 
+
+---
+class: center, middle, inverse
+# Any closing remarks?
+.center[ ![](https://d2ba1wehz8pq9c.cloudfront.net/Others/app-200x200_36e473164d144056bc485d5665035fee.png) ]
 
 
     </textarea>
     <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
       var slideshow = remark.create();
     </script>
