@@ -74,6 +74,32 @@
         margin-left: -125px;
         left: 50%;
       }
+
+      /* symantic color classes */
+      .good, #good { color: #5FC25F; }
+      .bad, #bad { color: #C25F5F; }
+
+      .bg-good, #bg-good { background: #5FC25F; }
+      .bg-bad, #bg-bad { background: #C25F5F; }
+
+      .bg-good pre,
+      #bg-good pre,
+      .bg-good pre code,
+      #bg-good pre code,
+      .bg-good pre .hljs,
+      #bg-good pre .hljs {
+        background: #93C293;
+        border-color: #93C293;
+      }
+      .bg-bad pre,
+      #bg-bad pre,
+      .bg-bad pre code,
+      #bg-bad pre code,
+      .bg-bad pre .hljs,
+      #bg-bad pre .hljs {
+        background: #C28888;
+        border-color: #C28888;
+      }
     </style>
   </head>
   <body>
@@ -111,11 +137,144 @@ class: center, middle, inverse
 - *We're supposed to have a Treasurer, but there's no money involved so for now we'll omit? This is ok right?*
 
 ---
+# Code Formatting Example
+I've seen many of you edit code like that looks like this.
+
+```html
+<article class="post-10654 post type-post status-publish format-standards" ><h1 class="entry-title">code formatting: please, do it</h1><div class="entry-content"><footer class="meta"><span class="byline author vcard">By <span class="fn">Louis Lazaris</span></span> on <time datetime="2015-03-20T14:18:48+00:00" pubdate class="updated">February 12th, 2014</time>
+```
+
+---
+# Some Properly Formatted Code
+So, is this better?
+```html
+<article class="post-10654 post type-post status-publish format-standards" >
+  <h1 class="entry-title">code formatting: please, do it</h1>
+  <div class="entry-content">
+    <footer class="meta">
+      <span class="byline author vcard">
+        By
+        <span class="fn">Louis Lazaris</span></span>
+          on
+          <time datetime="2015-03-20T14:18:48+00:00" pubdate class="updated">
+            February 12th, 2014
+          </time>
+        </span>
+      </span>
+    </footer>
+  </div>
+</article>
+```
+
+---
+# Code Formatting Rules (1)
+Every time you end a block level tag (such as `div` or `p`) that contains enough
+text that cannot fit on one line, go to a new indentation level.
+
+.bg-good[```html
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.
+</p>
+```]
+
+.bg-bad[```html
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+```]
+
+---
+# Code Formatting Rules (2)
+**Always indent with spaces**. Stick to the indentation convention that is already
+being used. Don't switch intentation amounts in the middle of a project. Projects
+that are developed by more than one person should only look like one person wrote
+everything.
+
+.bg-good[```html
+<div class="container">
+  <div class="col-md-6">
+    <h1>Hello, World!</h1>
+    <span>Some inline text</span>
+  </div>
+</div>
+```]
+
+.bg-bad[```html
+<div class="container">
+  <div class="col-md-6">
+      <h1>Hello, World!</h1>
+    <span>Some inline text</span>
+
+    </div>
+</div>
+```]
+
+---
+# Code Formatting Rules (3)
+Comments should always explain what is being done, not how it is done. In HTML,
+comments start with `&lt;!--` and end with `--&gt;`. Comments should be short and
+to the point.
+
+.bg-good[```html
+<!-- Main body container -->
+<div class="container">
+  <div class="col-md-6">
+    <h1>Hello, World!</h1>
+    <span>Some inline text</span>
+  </div>
+</div>
+```]
+
+.bg-bad[```html
+<!-- This container holds all of the elements in such a way that they will be responsive; each col-md-6 is half of the width in a md layout. -->
+<div class="container">
+  <div class="col-md-6">
+    <h1>Hello, World!</h1>
+    <span>Some inline text</span>
+  </div>
+</div>
+```]
+
+---
+# Code Formatting Rules (4)
+- Use discretion with all of the rules mentioned.
+- If you think that a long comment is really needed, go ahead and do it
+- but, make sure it matches with the coding style of the app
+
+---
+class: center, middle, inverse
+# Ready for our first project?
+
+---
 # Our first project: Our Website
 - Take a look at it's current state - [`http://bakercs.github.io`](http://bakercs.github.io)
 - Github Repository: [`http://github.com/bakercs/bakercs.github.io`](http://github.com/bakercs/bakercs.github.io)
 
 - So... What do we want on it?
+
+---
+# Some Ideas (Thanks Zach!):
+
+- **Home page**
+  - Summary of Bakercs
+  - who we are
+  - where we are from
+  - when we meet, and why.
+
+- **Projects page**
+  - Descriptions of our projects including this website
+  - any software or hardware projects
+  - cool hacks we do
+  - links to look at the code we make open source.
+
+- **media page**
+  - links to official Bakercs social media sites - Twitter, Facebook, YouTube etc.
+  - video tutorials, walkthroughs, pictures from events we attend etc.
+
+- **about page**
+  - members
+  - FAQ
+  - contact section
+
 
 ---
 # Make a Fork
@@ -149,9 +308,9 @@ After every signifigant change, make sure to:
 ---
 # Think you're done?
 You need to make a pull request to merge your changes back into the main code.
-I've already explained this pretty well somewhere else so take a look at 
-[CONTRIBUTING.md](https://github.com/bakercs/about/blob/master/CONTRIBUTING.md) in 
-`bakercs/about`. 
+I've already explained this pretty well somewhere else so take a look at
+[CONTRIBUTING.md](https://github.com/bakercs/about/blob/master/CONTRIBUTING.md) in
+`bakercs/about`.
 
 ---
 class: center, middle, inverse
