@@ -293,15 +293,38 @@ Run `pwd` to get your current directory, and go to it in a file browser.
 Make a copy of `index.html` and rename it to the page you're working on, so for
 example, `sample-page.html`
 
-Make whatever edits you'd like over the next week until the next meeting. Don't forget to update `partials/header.html` with a link to your new page!
+---
+# Add your page to the header:
+- Open `partials/header.html`
+- look for the section labeled `Navbar List`
+- Inside of the `ul` with a class of `navbar-nav`, add a list item for your page:
+```html
+<!-- Sample Page -->
+  <li data-page="sample-page.html">
+    <a href="sample-page.html">Sample Page</a>
+  </li>
+```
+- Run these 3 commands to let git know about your change and publish it onto github:
+```bash
+  git add partials/header.html
+  git commit -m "added page link to navbar"
+  git push origin master
+```
+---
+# Start scaffolding the page
+Make whatever edits you'd like over the next week until the next meeting. 
+It probably will take less than 20 minutes in total, and, **without your help we 
+cannot finish the project.**
 
 After every signifigant change, make sure to:
 
 ```bash
-  git add -u
+  git add sample-page.html
   git commit -m "describe the changes you made, but no more than a sentence"
   git push origin master
 ```
+
+### Do you get some strange error message? Are you confused? Send me a message on slack! I'll help you out.
 
 ---
 # Think you're done?
